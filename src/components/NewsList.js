@@ -1,12 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { useSelector } from "react-redux";
-
+import { history } from "../redux/configureStore";
 import NewsCard from "./NewsCard";
 
 const NewsList = () => {
   const newsData = useSelector((state) => state.news);
-  console.log(newsData);
 
   return (
     <NewsListWrap>

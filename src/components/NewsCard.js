@@ -1,10 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+import { history } from "../redux/configureStore";
 
 const NewsCard = (props) => {
   const data = props.data;
   return (
-    <NewsCardWrap>
+    <NewsCardWrap
+      onClick={() => {
+        history.push("/detail");
+      }}
+    >
       <div className="img-box">
         <img src={data.url} alt="" />
       </div>

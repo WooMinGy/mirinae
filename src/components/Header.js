@@ -1,10 +1,8 @@
 import React from "react";
-// import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 import { history } from "../redux/configureStore";
 
 const Header = (props) => {
-  console.log(props);
   return (
     <HeaderWrap>
       <div className="cate-btn-box">

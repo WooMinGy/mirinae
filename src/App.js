@@ -9,6 +9,7 @@ import Tips from "./pages/Tips";
 import Benefits from "./pages/Benefits";
 import Memory from "./pages/Memory";
 import Reviews from "./pages/Reviews";
+import Detail from "./pages/Detail";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path="/benefits" exact component={Benefits} />
       <Route path="/memory" exact component={Memory} />
       <Route path="/reviews" exact component={Reviews} />
+      <Route path="/detail" exact component={Detail} />
     </ConnectedRouter>
   );
 }
